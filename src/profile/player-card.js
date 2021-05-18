@@ -8,10 +8,7 @@ class PlayerCard extends React.Component {
               <Card.Img variant="top" src={this.props.pic} />
                 <Card.Body>
                   <Card.Title>{this.props.name}</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on tnpmhe card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
+                  <Card.Text>{this.props.desc}</Card.Text>
                 </Card.Body>
             </Card>
         );
