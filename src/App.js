@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from "react-bootstrap/Card";
+import PlayerCard from "./profile/player-card";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editeeeeeeeeeeee <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>SOFTGANG</h1>
+      <img src={process.env.PUBLIC_URL + "/ighty.png"} alt="logo?" className="rounded mx-auto d-block App-logo" />
+      <div class="row profiles">
+        <div class="col-sm-2 playerprofile"><PlayerCard name="Sayed"/></div>
+        <div class="col-sm-2 playerprofile"><PlayerCard name="PeeKay"/></div>
+        <div class="col-sm-2 playerprofile"><PlayerCard name="Sayed"/></div>
+        <div class="col-sm-2 playerprofile"><PlayerCard name="PeeKay"/></div>
+        <div class="col-sm-2 playerprofile"><PlayerCard name="Sayed"/></div>
+      </div>
+
+      
+      
     </div>
   );
 }
