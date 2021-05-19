@@ -32,19 +32,57 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.playerprofile{
+.playerprofile {
   margin: auto;
 }
-.profile-social{
-  display: none;
+
+.inner {
+  overflow: hidden;
 }
 
-.player-card:hover .profile-social {
-  display:block;
+.inner img {
+  transition: all 1s ease;
 }
 
+.inner:hover img {
+  transform: scale(1.15);
+}
+
+.youtube {
+  fill: black;
+}
+
+.youtube:hover {
+  fill: red;
+}
+
+.twitter {
+  fill: black;
+}
+
+.twitter:hover {
+  fill: #1DA1F2;
+}
+
+.insta {
+  fill: black;
+}
+
+.insta:hover {
+  fill: #8a3ab9;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.team-page {
+  padding-bottom: 30px;
+  background-color: grey;
+}
